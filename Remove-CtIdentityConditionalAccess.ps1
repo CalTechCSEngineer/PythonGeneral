@@ -1,0 +1,15 @@
+Import-Module $PSScriptRoot\CtIdentityConditionalAccess.psm1 -Force
+Connect-CtIdentityConditionalAccess
+Remove-CtIdentityConditionalAccessNamedLocation "AllowedCountries"
+Remove-CtIdentityConditionalAccessNamedLocation "CalTech"
+Remove-CtIdentityConditionalAccessNamedLocation "OnPrem"
+Remove-CtIdentityConditionalAccessNamedLocation "SkyKick"
+Remove-CtIdentityConditionalAccessPolicy "Default Block"
+Remove-CtIdentityConditionalAccessPolicy "Admin Access"
+Remove-CtIdentityConditionalAccessPolicy "Block Basic Authentication"
+Remove-CtIdentityConditionalAccessPolicy "Email Encryption External User Access"
+Remove-CtIdentityConditionalAccessPolicy "Require Approved Device - MacOS"
+Remove-CtIdentityConditionalAccessPolicy "Require Approved Device - Windows"
+Remove-CtIdentityConditionalAccessPolicy "Require Approved Device - Mobile Device"
+Remove-CtIdentityConditionalAccessPolicy "Block Intune Enrollment Off Prem"
+Remove-CtIdentityConditionalAccessPolicy "Block Mobile Devices for Unapproved Users"

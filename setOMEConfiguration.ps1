@@ -1,0 +1,1 @@
+Set-OMEConfiguration -Identity "OME Configuration" -Image (get-content -Path "C:\Caltech\caltech-logo.png" -Encoding byte) -EmailText "Encrypted message from CalTech's secure message system" -PortalText "CalTech Secure Email Portal" -IntroductionText "has sent you an encrypted message." -ReadButtonText "Read Encrypted Message" -OTPEnabled $true -SocialIdSignIn $true
